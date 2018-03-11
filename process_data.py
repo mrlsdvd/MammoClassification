@@ -47,10 +47,6 @@ def main():
     one_hot_encoded_train_labels = one_hot_encoded_labels.iloc[:train_labels_shape[0]]
     one_hot_encoded_test_labels = one_hot_encoded_labels.iloc[train_labels_shape[0]:]
 
-    # Insert headers back into test examples and labels
-    # one_hot_encoded_test_examples = pd.concat([one_hot_encoded_train_examples, one_hot_encoded_test_examples])
-    # one_hot_encoded_test_labels = pd.concat([one_hot_encoded_train_labels, one_hot_encoded_test_labels])
-
     # Save examples and labels to file
     one_hot_encoded_train_examples.to_csv(train_processed_examples_filename, header=True, index=False)
     one_hot_encoded_train_labels.to_csv(train_processed_hot_labels_filename, header=True, index=False)
