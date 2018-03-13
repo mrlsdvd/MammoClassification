@@ -16,7 +16,6 @@ examples_filename = 'examples.csv'
 hot_labels_filename = 'hot_labels.csv'
 labels_filename = 'labels.csv'
 
-
 # Paths to data directories
 train_path = os.path.join(data_dir, train_dir)
 test_path = os.path.join(data_dir, test_dir)

@@ -9,8 +9,7 @@ def main():
     train_dataset_filename = os.path.join(config.train_path, config.train_data_filename)
     train_processed_examples_filename = os.path.join(config.train_processed_path, config.examples_filename)
     train_processed_hot_labels_filename = os.path.join(config.train_processed_path, config.hot_labels_filename)
-    train_processed_labels_filename = os.path.join(config.train_processed_path, config.labels_filename)
-
+    train_processed_labels_filename = os.path.join(config.train_processed_path, config.labels_filename) 
     test_dataset_filename = os.path.join(config.test_path, config.test_data_filename)
     test_processed_examples_filename = os.path.join(config.test_processed_path, config.examples_filename)
     test_processed_hot_labels_filename = os.path.join(config.test_processed_path, config.hot_labels_filename)
