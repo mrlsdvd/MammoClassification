@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>CS 270 Final Project</title>
+    <script type="text/javascript">
+      //<![CDATA[
+      'use strict';
+      //]]>
+    </script>
+    <script src="./learn.js"></script>
+  </head>
+  <body onload="firstLoad()">
+  <h1>Mammogram Classification Learning Tool</h1>
+  <p>To get a sense of what our neural net is able to do with 98% accuracy, try your hand at guessing the BiRAD classification category based solely off the mammogram image.</p>
+
+  <h3>Patient Mammogram:</h3>
+<br>
+<img id="picture" width="450" height="450"> <br>
+
+
+<br>
+<br>
+<br>
+
+<b>BiRAD Category Guess:</b>
+<select id="userGuessSelection">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="4">5</option>
+</select>
+
+  <button onclick="verifyPhoto()"> Verify </button>
+  <button onclick="nextPhoto()"> Next </button>
+  <p id="answer"></p>
+
+  </body>
+</html>
